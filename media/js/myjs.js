@@ -165,7 +165,7 @@
     			var splitPartOne = matchesNum.split('-')[1];
 				var splitPartTwo = splitPartOne.match(/\S+/g);
 
-    			var splitPartCom = '$'+ ' ' + matchesNum.split('-')[0] + splitPartTwo[1] + ' ' + splitPartTwo[2];
+    			var splitPartCom = '$'+ ' ' + matchesNum.split('-')[0] + ' - '+splitPartTwo[0] + ' ' + splitPartTwo[1] + ' ' + splitPartTwo[2];
     			num.empty();
     			num.append(splitPartCom);
     			// console.log(splitPartCom);
