@@ -163,8 +163,9 @@
     		console.log(matchesNum);
     		if(matchesNum.indexOf('-')>-1){
     			var splitPartOne = matchesNum.split('-')[1];
-    			var splitPartTwo = splitPartOne.split(' ');
-    			var splitPartCom = '$'+ ' ' + matchesNum.split('-')[0] + splitPartTwo[2] + ' ' + splitPartTwo[3];
+				var splitPartTwo = splitPartOne.match(/\S+/g);
+
+    			var splitPartCom = '$'+ ' ' + matchesNum.split('-')[0] + splitPartTwo[1] + ' ' + splitPartTwo[2];
     			num.empty();
     			num.append(splitPartCom);
     			// console.log(splitPartCom);
