@@ -14,6 +14,9 @@
 
 	// jquery
 	$(function(){
+		
+		
+		$(".jxt-result-salary:contains('NA')").css("display","none");
 
 		var currentPage = window.location.pathname.toLowerCase();
 		// adding innerpage class for all the innerpage
